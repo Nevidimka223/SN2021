@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "lint": "eslint ../api",
+    "lint": "npx eslint app.js",
     "lint-fix": "eslint ../api --fix --color",
     "prepare": "cd .. && husky install api/.husky"
   },
@@ -23,14 +23,5 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "prettier": "^2.5.1"
-  },
-  "husky": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staget": {
-    "*.js": [
-      "npm run lint-fix",
-      "git add -Av"
-    ]
   }
 }
