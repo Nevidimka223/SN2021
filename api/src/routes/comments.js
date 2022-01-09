@@ -1,5 +1,11 @@
 const router = require('express').Router();
-const {getComments, getComment, createComment, updateComment, deleteComment} = require('../controllers/comments');
+const {
+  getComments,
+  getComment,
+  createComment,
+  updateComment,
+  deleteComment,
+} = require('../controllers/comments');
 
 router.get('/', getComments);
 

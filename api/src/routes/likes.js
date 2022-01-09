@@ -1,5 +1,10 @@
 const router = require('express').Router();
-const  {getLike, getLikes, createLike, deleteLike} = require('../controllers/likes')
+const {
+  getLike,
+  getLikes,
+  createLike,
+  deleteLike,
+} = require('../controllers/likes');
 
 router.get('/', getLikes);
 

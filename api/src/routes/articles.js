@@ -1,5 +1,13 @@
 const router = require('express').Router();
-const {getArticle, getArticles, getArticleComments, getArticleLikes, createArticle, updateArticle, deleteArticle} = require('../controllers/articles');
+const {
+  getArticle,
+  getArticles,
+  getArticleComments,
+  getArticleLikes,
+  createArticle,
+  updateArticle,
+  deleteArticle,
+} = require('../controllers/articles');
 
 router.get('/', getArticles);
 
