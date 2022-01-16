@@ -1,11 +1,14 @@
 import './Articles.css'
 
-function Article() {
+import Article from './Article/Article'
+import { articles } from '../../data/articles'
+
+function Articles() {
     return (
         <div className='article'>
-            Articles
+            {articles.map(article => <Article author={article.author} title={article.title}/>)}
         </div>
     )
 }
 
-export default Article;
+export default Articles;
