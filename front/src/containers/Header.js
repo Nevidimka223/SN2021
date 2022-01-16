@@ -1,8 +1,8 @@
 import Header from '../components/Header/Header';
 
-function HeaderContainer({setActivePage}) {
+function HeaderContainer() {
     return(
-        <Header setActivePage={setActivePage}/>
+        <Header />
     )
 }
 
