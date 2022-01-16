@@ -1,18 +1,21 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
-import { useState } from 'react';
-
-import BodyContainer from './containers/Body';
 import HeaderContainer from './containers/Header';
-import { ARTICLES_PAGE, ADD_ARTICLE_PAGE, PROFILE_PAGE } from './constant/pages';
+import {Articles} from './components/Articles';
+import {Profile} from './components/Profle';
+import {AddArticle} from './components/ArticleButton';
 
 function App() {
-  const [activePage, setActivePage] = useState(ARTICLES_PAGE)
-
   return (
     <div className="App">
-      <HeaderContainer setActivePage={setActivePage}  /> 
-      <BodyContainer activePage={activePage}/>
+      <HeaderContainer /> 
+      <Routes>
+        <Route path='/' element={<div>Main Page</div>} />
+				<Route path='/article' element={<AddArticle />} />
+				<Route path='/articles' element={<Articles />} />
+				<Route path='/profile' element={<Profile />} />
+      </Routes>
     </div>
   );
 }

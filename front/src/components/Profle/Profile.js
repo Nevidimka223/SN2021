@@ -1,8 +1,11 @@
-import './Profile.css';
+import './Profile.css'
 
 function Profile() {
     return (
-        <div className="ProfileTheme">Profile</div>
+        <div className='profile'>
+            Profile
+            Vova ☺
+        </div>
     );
 }
 
