@@ -1,16 +1,18 @@
 import './Header.css';
-import { ADD_ARTICLE_PAGE, ARTICLES_PAGE, PROFILE_PAGE } from '../../constant/pages';
+import { Link } from 'react-router-dom'
 
-function Header({setActivePage}) {
-    const setArticlePage = () => setActivePage(ARTICLES_PAGE)
-    const setAddArticlePage = () => setActivePage(ADD_ARTICLE_PAGE)
-    const setProfilePage = () => setActivePage(PROFILE_PAGE)
-    
+function Header() {    
     return (
         <div className="header">
-            <button onClick={setArticlePage}>Articles</button>
-            <button onClick={setAddArticlePage}>Add Article</button>
-            <button onClick={setProfilePage}>Profile</button>
+            <Link to = '/articles'>
+                <button className='buttons'>Articles</button>
+            </Link>
+            <Link to = '/article'>
+                <button className='buttons'>Add Article</button>
+            </Link>
+            <Link to = '/profile'>
+                <button className='buttons'>Profile</button>
+            </Link>
         </div>
     );
 }

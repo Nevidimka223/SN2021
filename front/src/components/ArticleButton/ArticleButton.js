@@ -1,8 +1,10 @@
-import './ArticleButton.css';
+import './AddArticle.css'
 
 function AddArticle() {
     return (
-        <div classname="Article">Add Article</div>
+        <div className='addArticle'>
+            Add Article
+        </div>
     );
 }
 

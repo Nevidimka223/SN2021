@@ -1,8 +1,10 @@
-import './Articles.css';
+import './Articles.css'
 
 function Article() {
     return (
-        <div classname="Article">Articles</div>
+        <div className='article'>
+            Articles
+        </div>
     )
 }
 
